@@ -1,0 +1,141 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left {
+    width: 70%;
+}
+
+.right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 27%;
+}
+
+.video_info__outer {
+    display: flex;
+    margin-top: 20px;
+    background-color: #ddebfb;
+    border-radius: 10px;
+    padding: 5px 15px;
+    justify-content: space-between;
+}
+
+.video_info {
+
+}
+
+.username {
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.username:hover {
+    font-size: 23px;
+}
+
+.video_name {
+    font-size: 22px;
+}
+
+.video_description {
+    font-size: 15px;
+}
+
+.like {
+    display: flex;
+    background-color: white;
+    align-self: center;
+    align-items: center;
+    padding: 7px 12px;
+    border-radius: 10px;
+    gap: 20px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.like:hover {
+    padding: 8px 14px;
+}
+
+.amount {
+    margin: 0;
+}
+
+.comment_block {
+    background-color: #ddebfb;
+    padding: 0 20px;
+    border-radius: 10px;
+}
+
+.trash {
+    cursor: pointer;
+    text-align: right;
+    justify-self: right;
+    margin: 0;
+}
+
+.right__container {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.comment_form__header {
+    margin: 0 0 10px;
+}
+
+.comment_form {
+    padding: 10px 15px;
+    background-color: lightblue;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.comment_textarea {
+    min-height: 55px;
+    max-height: 55px;
+    min-width: 98%;
+    max-width: 98%;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.upload_comment_btn {
+    background-color: #cbe4ff;
+    font-size: 18px;
+    border: 1px solid #cbe4ff;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.upload_comment_btn:hover {
+    padding: 10px;
+}
+
+.comment {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightblue;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.user {
+    margin: 0;
+    font-size: 20px;
+    text-decoration: #3c9cfc underline;
+}
+
+.comment_text {
+    margin: 0;
+}

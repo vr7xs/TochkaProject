@@ -1,0 +1,125 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 440px;
+    background-color: rgb(231, 231, 231);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.popup__header {
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.name {
+    text-align: center;
+    margin-left: 39%;
+}
+
+.cross {
+    text-align: right;
+    margin-left: auto;
+}
+
+.textareas {
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.textarea {
+    max-width: 99%;
+    min-width: 99%;
+}
+
+.textarea__name {
+    min-height: 50px;
+    max-height: 50px;
+}
+
+.textarea__description {
+    min-height: 130px;
+    max-height: 130px;
+}
+
+.file_inputs {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.input_file span {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+	cursor: pointer;
+	color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border-style: none;
+	background-color: #0e3056;
+}
+
+.input_file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.input_file {
+    margin-top: 24px;
+    align-self: center;
+}
+
+.input_file:hover span, .input_file:active span {
+    background-color: #cbe4ff;
+	border: 1px solid #0e3056;
+    color: #0e3056;
+}
+
+.input_file_list {
+	padding: 10px 0;
+}
+
+.btn__container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    width: 230px;
+    background-color: #0e3056;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #cbe4ff;
+	border: 1px solid #0e3056;
+    color: #0e3056;
+}

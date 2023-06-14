@@ -1,0 +1,12 @@
+.main {
+
+}
+
+.header {
+    font-size: 24px;
+}
+
+.videos {
+    display: flex;
+    gap: 50px;
+}

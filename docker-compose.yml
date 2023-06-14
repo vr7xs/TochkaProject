@@ -1,0 +1,49 @@
+version: "2.1"
+
+services:
+  backend:
+    restart: always
+    build: ./backend
+    command: gunicorn app:app --workers 8 --timeout 1000 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000
+    ports:
+      - "8000:8000"
+    env_file: .env.production
+    depends_on:
+      database:
+        condition: service_healthy
+    networks:
+      frontend-backend:
+      database-backend:
+
+  frontend:
+    build:
+      context: ./front
+      args:
+        REACT_APP_API_URL: http://localhost:80
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      frontend-backend:
+
+  database:
+    image: postgres:15-alpine
+    volumes:
+      - data:/var/lib/postgresql/data
+    env_file: .env.database
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: [ "CMD", "pg_isready", "-U", "noobies", "-d", "noobies"]
+      interval: 5s
+      retries: 15
+    networks:
+        database-backend:
+
+volumes:
+  data:
+
+networks:
+  frontend-backend:
+  database-backend:

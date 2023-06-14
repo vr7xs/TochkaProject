@@ -1,0 +1,76 @@
+.card {
+    padding: 20px;
+    width: 330px;
+    height: 230px;
+    background-color: #ddebfb;
+    border-radius: 25px;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.card:hover {
+    width: 340px;
+    height: 235px;
+}
+
+.preview {
+    width: 98%;
+    height: 180px;
+}
+
+.name {
+    color: black;
+    font-size: 16px;
+    margin: 0 0 7px;
+}
+
+.owner {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 0 0 5px;
+}
+
+.container__info {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.avatar {
+    border-radius: 50%;
+    border: 1px solid;
+}
+
+.brash {
+    cursor: pointer;
+    align-self: self-end;
+    z-index: 99;
+}
+
+.views {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: end;
+}
+
+.link {
+    margin: 0 !important;
+    height: 302px;
+    text-decoration: none;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trashcan {
+    cursor: pointer;
+}
